@@ -14,7 +14,7 @@ TOKEN = os.getenv("TOKEN")  # Discord bot token z Railway
 # Lista utworów YouTube
 YOUTUBE_LINKI = [
     "https://youtu.be/T_NKi5KHUdI?si=O_mGQvqF5QE-NHKx",
-    "https://www.youtube.com/watch?v=DWcJFNfaw9c",
+    "https://youtu.be/UUGRu03J-Vs?si=tl2XlSrOvlz87Bn_",
 ]
 
 intents = discord.Intents.default()
