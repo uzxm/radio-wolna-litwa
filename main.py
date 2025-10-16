@@ -13,7 +13,7 @@ TOKEN = os.getenv("TOKEN")  # Discord bot token z Railway
 
 # Lista utworów YouTube
 YOUTUBE_LINKI = [
-    "https://www.youtube.com/watch?v=5qap5aO4i9A",
+    "https://youtu.be/T_NKi5KHUdI?si=O_mGQvqF5QE-NHKx",
     "https://www.youtube.com/watch?v=DWcJFNfaw9c",
 ]
 
@@ -52,7 +52,7 @@ async def play_music(vc):
             while vc.is_playing():
                 await asyncio.sleep(1)
         except Exception as e:
-            print(f"⚠️ Nie udało się odtworzyć: {url} | Błąd: {e}")
+            print(f"⚠️ no: {url} | ror: {e}")
         index += 1
         await asyncio.sleep(1)
 
@@ -79,7 +79,7 @@ async def ping(interaction: discord.Interaction):
     embed.add_field(name="Bot deployed in", value="**Poland 🇵🇱**", inline=False)
     embed.add_field(name="Uptime", value=f"**{fmt(uptime)}**", inline=False)
     embed.add_field(name="Broadcasting for", value=f"**{fmt(broadcast_time)}**", inline=False)
-    embed.add_field(name="Now playing", value=f"**{current_title or 'Brak utworu'}**", inline=False)
+    embed.add_field(name="Now playing", value=f"**{current_title or 'not playing'}**", inline=False)
     await interaction.response.send_message(embed=embed)
 
 @bot.tree.command(name="deploy", description="starts the yap on a channel")
