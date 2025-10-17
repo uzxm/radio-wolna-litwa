@@ -14,7 +14,7 @@ TOKEN = os.getenv("TOKEN")  # Discord bot token z Railway
 # Lista utworów YouTube
 YOUTUBE_LINKI = [
     "https://on.soundcloud.com/1AI1OCtL0y0Ju4etk1",
-    "https://youtu.be/UUGRu03J-Vs?si=tl2XlSrOvlz87Bn_",
+    "https://soundcloud.com/dj1llda/tung-tung-tung-sahur-phonk?in=v79h0u1dcj1d/sets/brainrot-rap&si=1b801e0f8c974567abd1861e1ee477a1&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
 ]
 
 intents = discord.Intents.default()
